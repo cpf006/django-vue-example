@@ -66,7 +66,7 @@ If an invalid number or no number is provided, the API responds with:
 - Content-Type: application/json
 
 **Example Request**:
-```json
+```
 POST /api/num_to_english
 Content-Type: application/json
 
