@@ -23,12 +23,6 @@ npm run serve
 
 This API converts numeric integers into their English words representation.
 
-#### Base URL
-```
-http://<base-url>/api/num_to_english
-```
-Replace `<base-url>` with the actual URL where the service is hosted.
-
 #### Supported Methods
 
 - **GET**: Retrieves the English word equivalent of the number provided as a query parameter.
@@ -37,8 +31,6 @@ Replace `<base-url>` with the actual URL where the service is hosted.
 #### Usage
 
 ##### GET Request
-
-**URL**: `/num_to_english?number=<integer>`
 
 **Parameters**:
 - `number` (required): The integer you want to convert to words.
@@ -67,8 +59,6 @@ If an invalid number or no number is provided, the API responds with:
 
 ##### POST Request
 
-**URL**: `/num_to_english`
-
 **Body**:
 - JSON object containing the key `number`.
 
@@ -76,7 +66,7 @@ If an invalid number or no number is provided, the API responds with:
 - Content-Type: application/json
 
 **Example Request**:
-```json
+```
 POST /api/num_to_english
 Content-Type: application/json
 
@@ -108,9 +98,6 @@ For missing or non-integer values:
 - **405 Method Not Allowed**: If an HTTP method other than GET or POST is used.
 - **500 Internal Server Error**: General server errors.
 
-### Security and Authentication
-
-Currently, this endpoint does not require authentication. Ensure that you do not expose sensitive data through this API. Communications are recommended to be secured using HTTPS.
 
 ## Backend Tests
 
